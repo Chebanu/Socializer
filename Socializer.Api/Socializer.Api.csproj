@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Socializer.Domain\Socializer.Domain.csproj" />
+      <ProjectReference Include="..\Socializer.Application\Socializer.Application.csproj" />
+      <ProjectReference Include="..\Socializer.Infrastructure\Socializer.Infrastructure.csproj" />
+      <ProjectReference Include="..\Socializer.Contracts\Socializer.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>
