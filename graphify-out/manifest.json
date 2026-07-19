@@ -1,0 +1,137 @@
+{
+  "Socializer.Api/Program.cs": {
+    "mtime": 1784403893.6594703,
+    "ast_hash": "837b6ec2cde1c8281fb07ee7e1928d6a",
+    "semantic_hash": "837b6ec2cde1c8281fb07ee7e1928d6a"
+  },
+  "Socializer.Api/Properties/launchSettings.json": {
+    "mtime": 1783511489.5111978,
+    "ast_hash": "69ad49fce631ee15eb34615863e3ba21",
+    "semantic_hash": "69ad49fce631ee15eb34615863e3ba21"
+  },
+  "Socializer.Api/Socializer.Api.csproj": {
+    "mtime": 1784403883.8010364,
+    "ast_hash": "01a0be52c9cebbaf70e3ca4eee3b8479",
+    "semantic_hash": "01a0be52c9cebbaf70e3ca4eee3b8479"
+  },
+  "Socializer.Api/appsettings.Development.json": {
+    "mtime": 1783511272.2924721,
+    "ast_hash": "477a525a47fc9bdbbf94690e6633d843",
+    "semantic_hash": "477a525a47fc9bdbbf94690e6633d843"
+  },
+  "Socializer.Api/appsettings.json": {
+    "mtime": 1783511272.2900102,
+    "ast_hash": "732f4d75514e890746f0170256ed9654",
+    "semantic_hash": "732f4d75514e890746f0170256ed9654"
+  },
+  "Socializer.Application/ApplicationAssemblyReference.cs": {
+    "mtime": 1784403328.8395398,
+    "ast_hash": "ee07e0396e491a4feb1f3b0d2266f345",
+    "semantic_hash": "ee07e0396e491a4feb1f3b0d2266f345"
+  },
+  "Socializer.Application/Common/Interfaces/IDateTime.cs": {
+    "mtime": 1784403324.0418613,
+    "ast_hash": "62bb98b2fe177a6364368a944d71fb2a",
+    "semantic_hash": "62bb98b2fe177a6364368a944d71fb2a"
+  },
+  "Socializer.Application/DependencyInjection.cs": {
+    "mtime": 1784403332.8988369,
+    "ast_hash": "6d95cdc909d0b1d050a3c556426059fc",
+    "semantic_hash": "6d95cdc909d0b1d050a3c556426059fc"
+  },
+  "Socializer.Application/Socializer.Application.csproj": {
+    "mtime": 1784403318.4841986,
+    "ast_hash": "382a344fdd6ac2e3883e6b531f47fcbc",
+    "semantic_hash": "382a344fdd6ac2e3883e6b531f47fcbc"
+  },
+  "Socializer.Contracts/ContractsAssemblyReference.cs": {
+    "mtime": 1784403350.3938806,
+    "ast_hash": "a6403413257b8694ecee136a220e8f00",
+    "semantic_hash": "a6403413257b8694ecee136a220e8f00"
+  },
+  "Socializer.Contracts/Socializer.Contracts.csproj": {
+    "mtime": 1784403156.5560098,
+    "ast_hash": "4258e11a2b535b27f62d0cc8ecdeccc5",
+    "semantic_hash": "4258e11a2b535b27f62d0cc8ecdeccc5"
+  },
+  "Socializer.Domain/Common/BaseAuditableEntity.cs": {
+    "mtime": 1784403308.6039197,
+    "ast_hash": "c8f7498f58cf7e7ddd9916de3d0518e9",
+    "semantic_hash": "c8f7498f58cf7e7ddd9916de3d0518e9"
+  },
+  "Socializer.Domain/Common/BaseEntity.cs": {
+    "mtime": 1784403305.3327732,
+    "ast_hash": "b52e1edc3f496f3473ef9a6b69302c4e",
+    "semantic_hash": "b52e1edc3f496f3473ef9a6b69302c4e"
+  },
+  "Socializer.Domain/Exceptions/DomainException.cs": {
+    "mtime": 1784403312.8213754,
+    "ast_hash": "0428dac6b09078e870041d57b5446088",
+    "semantic_hash": "0428dac6b09078e870041d57b5446088"
+  },
+  "Socializer.Domain/Socializer.Domain.csproj": {
+    "mtime": 1783511455.2397687,
+    "ast_hash": "fa2b4f7a1bec086b40997565c8bad409",
+    "semantic_hash": "fa2b4f7a1bec086b40997565c8bad409"
+  },
+  "Socializer.Infrastructure/Common/SystemDateTime.cs": {
+    "mtime": 1784403341.2614713,
+    "ast_hash": "116eb632d81a16a1bb89b75b19acfe58",
+    "semantic_hash": "116eb632d81a16a1bb89b75b19acfe58"
+  },
+  "Socializer.Infrastructure/DependencyInjection.cs": {
+    "mtime": 1784403418.8463292,
+    "ast_hash": "4604419fda55a4a4f202e22011b4ad43",
+    "semantic_hash": "4604419fda55a4a4f202e22011b4ad43"
+  },
+  "Socializer.Infrastructure/Socializer.Infrastructure.csproj": {
+    "mtime": 1784403320.6910944,
+    "ast_hash": "6b3eb46aa450ce5866a8c33572072435",
+    "semantic_hash": "6b3eb46aa450ce5866a8c33572072435"
+  },
+  "Socializer.IntegrationTests/HealthEndpointTests.cs": {
+    "mtime": 1784403535.4360864,
+    "ast_hash": "a0dc5823cf66b15b27150eb20af366d8",
+    "semantic_hash": "a0dc5823cf66b15b27150eb20af366d8"
+  },
+  "Socializer.IntegrationTests/Socializer.IntegrationTests.csproj": {
+    "mtime": 1784403179.2016306,
+    "ast_hash": "e6528f8569c28794b7fa6c81a250ab16",
+    "semantic_hash": "e6528f8569c28794b7fa6c81a250ab16"
+  },
+  "Socializer.UnitTests/Common/BaseAuditableEntityTests.cs": {
+    "mtime": 1784403531.4976256,
+    "ast_hash": "8c587b33b49f433036736543f965d314",
+    "semantic_hash": "8c587b33b49f433036736543f965d314"
+  },
+  "Socializer.UnitTests/Socializer.UnitTests.csproj": {
+    "mtime": 1784403174.8033035,
+    "ast_hash": "3dbe77423854ecc536945093df945efb",
+    "semantic_hash": "3dbe77423854ecc536945093df945efb"
+  },
+  "Socializer.sln": {
+    "mtime": 1784403270.9348128,
+    "ast_hash": "f573e0118c05c5f5f9ad119895846216",
+    "semantic_hash": "f573e0118c05c5f5f9ad119895846216"
+  },
+  "global.json": {
+    "mtime": 1784403379.7330956,
+    "ast_hash": "ce6d6689cc4e5bd92061500f6e3ded1c",
+    "semantic_hash": "ce6d6689cc4e5bd92061500f6e3ded1c"
+  },
+  "docker-compose.yml": {
+    "mtime": 1784445340.0270042,
+    "ast_hash": "54b6d8817c9684e60974e28c9ee64c57",
+    "semantic_hash": "54b6d8817c9684e60974e28c9ee64c57"
+  },
+  "docs/Socializer_Roadmap.md": {
+    "mtime": 1784445589.5511343,
+    "ast_hash": "cc035d128d46f2158e84f9d34480181a",
+    "semantic_hash": "cc035d128d46f2158e84f9d34480181a"
+  },
+  "docs/Socializer_UML_Diagrams.md": {
+    "mtime": 1784411816.546662,
+    "ast_hash": "af70e5ec48df9958c2ebe144c2916187",
+    "semantic_hash": "af70e5ec48df9958c2ebe144c2916187"
+  }
+}
