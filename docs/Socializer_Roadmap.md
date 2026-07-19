@@ -108,7 +108,7 @@ This is a **working document**, not a plan you write once and forget. Treat it t
 - [x] Docker Compose skeleton: `postgres`, `redis`, `azurite` services, named volumes
 - [x] Backend Dockerfile (multi-stage build)
 - [ ] `appsettings.json` + `appsettings.Development.json` + secrets via `dotnet user-secrets` (never commit secrets)
-- [ ] Swagger/OpenAPI wired up
+- [x] Swagger/OpenAPI wired up
 - [ ] `/health` and `/health/ready` endpoints (basic, no dependency checks yet)
 - [ ] Serilog console sink configured; Seq service added to Compose
 - [ ] GitHub Actions: build + test on every PR
