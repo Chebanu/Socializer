@@ -105,8 +105,8 @@ This is a **working document**, not a plan you write once and forget. Treat it t
 - [ ] Initialize solution: `Socializer.Api`, `Socializer.Application`, `Socializer.Domain`, `Socializer.Infrastructure`, `Socializer.Contracts`
 - [ ] Initialize `Socializer.UnitTests`, `Socializer.IntegrationTests` projects
 - [ ] `.editorconfig`, `Directory.Build.props`, nullable enabled, analyzers on
-- [ ] Docker Compose skeleton: `postgres`, `redis`, `azurite` services, named volumes
-- [ ] Backend Dockerfile (multi-stage build)
+- [x] Docker Compose skeleton: `postgres`, `redis`, `azurite` services, named volumes
+- [x] Backend Dockerfile (multi-stage build)
 - [ ] `appsettings.json` + `appsettings.Development.json` + secrets via `dotnet user-secrets` (never commit secrets)
 - [ ] Swagger/OpenAPI wired up
 - [ ] `/health` and `/health/ready` endpoints (basic, no dependency checks yet)
@@ -512,8 +512,8 @@ Grouped by module. Each line is meant to become one GitHub Issue: `[module] Titl
 
 ### [infra] Infrastructure & DevOps
 - [ ] Solution/project structure scaffolded (S0)
-- [ ] Docker Compose base file (S0)
-- [ ] Backend Dockerfile, multi-stage (S0)
+- [x] Docker Compose base file (S0)
+- [x] Backend Dockerfile, multi-stage (S0)
 - [ ] Frontend Dockerfile / build pipeline (S0)
 - [ ] `.editorconfig` + analyzers (S0)
 - [ ] GitHub Actions CI: build + test (S0)
