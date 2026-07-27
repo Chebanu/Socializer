@@ -14,4 +14,14 @@ public class HealthEndpointTests(WebApplicationFactory<Program> factory) : IClas
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
+
+    [Fact]
+    public async Task HealthReady_ReturnsOk()
+    {
+        var client = factory.CreateClient();
+
+        var response = await client.GetAsync("/health/ready");
+
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+    }
 }

@@ -1,7 +1,15 @@
+using Serilog;
 using Socializer.Application;
 using Socializer.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((context, services, configuration) => configuration
+    .ReadFrom.Configuration(context.Configuration)
+    .ReadFrom.Services(services)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.Seq(context.Configuration["Seq:ServerUrl"] ?? "http://localhost:5341"));
 
 // Composition root: each layer registers itself via its own AddXxx() extension method.
 builder.Services.AddApplication();
@@ -10,38 +18,20 @@ builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHealthChecks();
+
 var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
+app.UseSerilogRequestLogging();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast");
+// Basic liveness/readiness probes. No dependency checks yet — see Sprint 11 (Observability).
+app.MapHealthChecks("/health");
+app.MapHealthChecks("/health/ready");
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
 
 // Exposes Program to Socializer.IntegrationTests via WebApplicationFactory<Program>.
 public partial class Program;
