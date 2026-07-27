@@ -102,18 +102,18 @@ This is a **working document**, not a plan you write once and forget. Treat it t
 **Estimated time (junior/strong-junior, part-time):** 1.5–2 weeks · **Difficulty:** Standard
 
 **Scope:**
-- [ ] Initialize solution: `Socializer.Api`, `Socializer.Application`, `Socializer.Domain`, `Socializer.Infrastructure`, `Socializer.Contracts`
-- [ ] Initialize `Socializer.UnitTests`, `Socializer.IntegrationTests` projects
-- [ ] `.editorconfig`, `Directory.Build.props`, nullable enabled, analyzers on
+- [x] Initialize solution: `Socializer.Api`, `Socializer.Application`, `Socializer.Domain`, `Socializer.Infrastructure`, `Socializer.Contracts`
+- [x] Initialize `Socializer.UnitTests`, `Socializer.IntegrationTests` projects
+- [x] `.editorconfig`, `Directory.Build.props`, nullable enabled, analyzers on
 - [x] Docker Compose skeleton: `postgres`, `redis`, `azurite` services, named volumes
 - [x] Backend Dockerfile (multi-stage build)
-- [ ] `appsettings.json` + `appsettings.Development.json` + secrets via `dotnet user-secrets` (never commit secrets)
+- [x] `appsettings.json` + `appsettings.Development.json` + secrets via `dotnet user-secrets` (never commit secrets)
 - [x] Swagger/OpenAPI wired up
-- [ ] `/health` and `/health/ready` endpoints (basic, no dependency checks yet)
-- [ ] Serilog console sink configured; Seq service added to Compose
-- [ ] GitHub Actions: build + test on every PR
-- [ ] React app scaffolded (Vite), talks to `/health` to prove connectivity
-- [ ] README with local dev instructions (`docker compose up`, run migrations, run frontend)
+- [x] `/health` and `/health/ready` endpoints (basic, no dependency checks yet)
+- [x] Serilog console sink configured; Seq service added to Compose
+- [x] GitHub Actions: build + test on every PR
+- [x] React app scaffolded (Vite), talks to `/health` to prove connectivity
+- [x] README with local dev instructions (`docker compose up`, run migrations, run frontend)
 
 **Definition of Done:** `docker compose up` boots Postgres+Redis+Azurite+API+Frontend; CI is green on a trivial PR; hitting `/health` from the React app returns 200.
 
@@ -511,15 +511,15 @@ Apply this checklist to **every** issue/PR, regardless of sprint:
 Grouped by module. Each line is meant to become one GitHub Issue: `[module] Title`. Sprint mapping in brackets at the end of each item where useful (`S0`…`S16`); unmarked items are candidates to slot into whichever sprint has room, or v2.
 
 ### [infra] Infrastructure & DevOps
-- [ ] Solution/project structure scaffolded (S0)
+- [x] Solution/project structure scaffolded (S0)
 - [x] Docker Compose base file (S0)
 - [x] Backend Dockerfile, multi-stage (S0)
 - [ ] Frontend Dockerfile / build pipeline (S0)
-- [ ] `.editorconfig` + analyzers (S0)
-- [ ] GitHub Actions CI: build + test (S0)
+- [x] `.editorconfig` + analyzers (S0)
+- [x] GitHub Actions CI: build + test (S0)
 - [ ] GitHub Actions CI: lint frontend (S0)
-- [ ] Seq service in Compose (S0)
-- [ ] `dotnet user-secrets` documented in README (S0)
+- [x] Seq service in Compose (S0)
+- [x] `dotnet user-secrets` documented in README (S0)
 - [ ] EF Core migrations bootstrap + `dotnet ef database update` documented (S0)
 - [ ] Docker Compose prod profile (S14)
 - [ ] Nginx reverse proxy config (S14)
