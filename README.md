@@ -25,10 +25,10 @@ docker compose up postgres redis azurite seq
 
 ## Local secrets
 
-Connection strings and other local secrets are never committed. Configure them per-project with `dotnet user-secrets` from the `Socializer.Api` directory:
+Connection strings and other local secrets are never committed. Configure them per-project with `dotnet user-secrets` from the `backend/Socializer.Api` directory:
 
 ```bash
-cd Socializer.Api
+cd backend/Socializer.Api
 dotnet user-secrets set "ConnectionStrings:Postgres" "Host=localhost;Port=5432;Database=socializer;Username=socializer;Password=socializer"
 ```
 
@@ -39,13 +39,14 @@ The values above match the defaults in `.env.example`. `appsettings.json` only c
 EF Core and the first migrations land in Sprint 1 (Authentication). Once available, migrations are applied with:
 
 ```bash
+cd backend
 dotnet ef database update --project Socializer.Infrastructure --startup-project Socializer.Api
 ```
 
 ## Running the API directly
 
 ```bash
-cd Socializer.Api
+cd backend/Socializer.Api
 dotnet run
 ```
 
@@ -62,6 +63,7 @@ The dev server runs at `http://localhost:5173` and proxies `/health` to the API 
 ## Running tests
 
 ```bash
+cd backend
 dotnet test
 ```
 
