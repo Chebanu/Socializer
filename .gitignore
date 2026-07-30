@@ -5,6 +5,12 @@ riderModule.iml
 /_ReSharper.Caches/
 .env
 
+# IDE / OS local state
+.idea/
+.vs/
+.vite/
+.DS_Store
+
 # graphify local cache/state - regenerated on each run, contains machine-local absolute paths
 graphify-out/cache/
 graphify-out/.graphify_*
