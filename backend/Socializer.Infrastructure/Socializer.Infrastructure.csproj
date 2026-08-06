@@ -5,9 +5,15 @@
     <ProjectReference Include="..\Socializer.Domain\Socializer.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Label="Hosting glue">
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.10" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.10" />
+  </ItemGroup>
+
+  <ItemGroup Label="Persistence">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
   </ItemGroup>
 
   <PropertyGroup>
